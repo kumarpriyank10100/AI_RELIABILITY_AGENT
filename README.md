@@ -61,12 +61,3 @@ The system is programmed to trigger a **UI Warning Banner** if any of the follow
 
 ---
 
-## 📝 License
-
-MIT License - Feel free to use this for your own AI simulations!
-
-```
-
-Would you like me to generate the **requirements.txt** content in a single block as well?
-
-```
