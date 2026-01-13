@@ -1,6 +1,3 @@
-Here is the entire **README.md** file content in a single, easy-to-copy code block:
-
-```markdown
 # ☢️ Core Reactor Management System (Gemini AI)
 
 A high-tech terminal interface powered by **Google Gemini 2.0 Flash** and **Gradio**. This application monitors simulated reactor status, handles local override commands, and features an automated emergency alert system for high-heat detection.
