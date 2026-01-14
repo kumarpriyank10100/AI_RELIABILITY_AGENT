@@ -64,12 +64,15 @@ The system is programmed to trigger a **UI Warning Banner** if any of the follow
 
 ---
 
+---
+
 ## 🚀 Live Demo
 
 You can test the **Core Reactor Management System** live on Hugging Face Spaces. The interface allows you to simulate reactor conditions and observe the Agentic AI's safety responses in real-time.
 
-[![Open in Spaces]([https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-lg-dark.svg)]([https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE_NAME](https://priyanshu-kumar-001-ai-reliability-agent.hf.space/?__theme=system&deep_link=3a3Au1WFODQ)](https://priyanshu-kumar-001-ai-reliability-agent.hf.space/?__theme=system&deep_link=3a3Au1WFODQ))
+[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-lg-dark.svg)]([https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE_NAME](https://priyanshu-kumar-001-ai-reliability-agent.hf.space/?__theme=system&deep_link=3a3Au1WFODQ))
 
 > **Pro Tip:** If the Space is "Sleeping," simply click the link and wait a few moments for the container to restart.
 
+---
 ---
