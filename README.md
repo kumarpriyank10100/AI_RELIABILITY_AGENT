@@ -60,12 +60,7 @@ The system is programmed to trigger a **UI Warning Banner** if any of the follow
 * `Pressure Vent`
 
 ---
----
 
----
-
----
----
 
 ## 🌐 Live Project Dashboard
 
@@ -73,7 +68,7 @@ The **AI Reliability Agent** is currently deployed and operational on Hugging Fa
 
 [![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-lg-dark.svg)](https://priyanshu-kumar-001-ai-reliability-agent.hf.space/)
 
-### 🔗 [Direct Access Link](https://priyanshu-kumar-001-ai-reliability-agent.hf.space/)
+### 🔗 [DIRECT ACCESS LINK](https://priyanshu-kumar-001-ai-reliability-agent.hf.space/)
 
 **How to Test:**
 1.  **Normal State:** Set Temperature to **350K** and Pressure to **100psi**. (Status: Normal)
