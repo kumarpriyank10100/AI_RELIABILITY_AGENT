@@ -1,78 +1,70 @@
-# ☢️ Core Reactor Management System (Gemini AI)
 
-A high-tech terminal interface powered by **Google Gemini 2.0 Flash** and **Gradio**. This application monitors simulated reactor status, handles local override commands, and features an automated emergency alert system for high-heat detection.
+# AI-Reliability: Agentic Control for Tennessee Eastman Reactor
 
-## ✨ Features
-* **Gemini AI Integration:** Uses state-of-the-art LLM for intelligent system responses.
-* **Emergency Detection:** Real-time logic scans outputs for "High Heat" or "Coolant" issues.
-* **Gradio UI:** A "Glass" themed, responsive web interface.
-* **Safety Metadata Filtering:** Clean chat output (no "Safety Cleared" technical clutter).
-* **Local Override Mode:** Specialized system prompts for reactor simulation.
+This project demonstrates a **Hybrid Intelligent System** for industrial fault detection and recovery. It combines traditional Machine Learning (Random Forest) with Large Language Models (Gemini 1.5 Flash) to monitor and manage a chemical reactor based on the **Tennessee Eastman Process (TEP)** benchmark.
 
----
+## 🚀 Key Features
 
-## 🚀 Quick Start
+* **Real-time Fault Detection:** A Random Forest classifier trained on TEP sensor distributions (Temperature, Pressure, and Flow) to identify process deviations.
+* **Agentic Reasoning:** An LLM-based controller that interprets sensor data and generates natural language engineering instructions.
+* **Physics-Informed Safety Interlock:** A deterministic logic layer that monitors AI commands. If the AI suggests an action that violates industrial safety physics (e.g., closing a valve during a high-pressure event), the system triggers a **Self-Correction** loop.
+* **Industrial Dashboard:** A dark-mode DCS (Distributed Control System) interface built with Gradio, featuring multivariate radar charts for process health visualization.
 
-### 1. Prerequisites
-* Python 3.9+
-* A Gemini API Key (Get it at [Google AI Studio](https://aistudio.google.com/))
+## 🏗️ System Architecture
 
-### 2. Installation
-Clone the repository and install the dependencies:
+The system operates in three distinct layers to ensure maximum reliability:
+
+1. **Perception Layer:** Scaled sensor inputs are processed by a scikit-learn model to detect anomalies.
+2. **Cognition Layer:** Google Gemini 1.5 Flash analyzes the state vs. Standard Operating Procedures (SOPs).
+3. **Safety Layer:** A hard-coded "Interlock" validates AI instructions against safety thresholds before execution.
+
+## 🛠️ Tech Stack
+
+* **Language:** Python
+* **AI/LLM:** Google Gemini 1.5 Flash (via Google Generative AI API)
+* **Machine Learning:** Scikit-Learn (Random Forest, StandardScaler)
+* **Interface:** Gradio
+* **Visualization:** Plotly (Radar Charts), Matplotlib (Sensitivity Analysis)
+* **Data:** Tennessee Eastman Process (TEP) calibrated distributions
+
+## 📋 Installation & Usage
+
+### 1. Clone the repository
+
 ```bash
-pip install google-genai gradio python-dotenv
+git clone https://github.com/your-username/tep-ai-reliability.git
+cd tep-ai-reliability
 
 ```
 
-### 3. Configuration
+### 2. Install dependencies
 
-Create a `.env` file in the root directory and add your API key:
-
-```env
-GEMINI_API_KEY=your_actual_key_here
+```bash
+pip install gradio google-generativeai plotly scikit-learn pandas numpy
 
 ```
 
-### 4. Run the App
+### 3. Configure API Key
+
+Get an API key from [Google AI Studio](https://aistudio.google.com/) and add it to your environment variables or directly in the configuration cell:
+
+```python
+genai.configure(api_key="YOUR_API_KEY")
+
+```
+
+### 4. Run the Project
+
+Open the notebook in Google Colab or run the script:
 
 ```bash
 python app.py
 
 ```
 
-The interface will be available at `http://127.0.0.1:7860`
+## 📊 Industrial Context
+
+The **Tennessee Eastman Process** is a world-renowned benchmark in the chemical engineering community used to evaluate process control and monitoring systems. This project applies modern "Agentic AI" to this classic problem, showcasing how LLMs can assist human operators in high-stakes environments without compromising safety.
 
 ---
 
-## 🛠️ Project Structure
-
-* **app.py**: The main application logic and Gradio UI.
-* **.env**: (Hidden) Stores your private API credentials.
-* **requirements.txt**: List of necessary Python packages.
-
-## ⚠️ System Alerts
-
-The system is programmed to trigger a **UI Warning Banner** if any of the following keywords are detected in the reactor output:
-
-* `High Heat`
-* `Emergency`
-* `Coolant Flow`
-* `Pressure Vent`
-
----
-
-
-## 🌐 Live Project Dashboard
-
-The **AI Reliability Agent** is currently deployed and operational on Hugging Face Spaces. You can interact with the reactor simulation, adjust sensor sliders, and observe the Agentic AI's safety interlocks in real-time.
-
-[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-lg-dark.svg)](https://priyanshu-kumar-001-ai-reliability-agent.hf.space/)
-
-### 🔗 [DIRECT ACCESS LINK](https://priyanshu-kumar-001-ai-reliability-agent.hf.space/)
-
-**How to Test:**
-1.  **Normal State:** Set Temperature to **350K** and Pressure to **100psi**. (Status: Normal)
-2.  **Emergency State:** Slide Temperature above **385K**. (Status: High Heat Fault)
-3.  **Safety Interlock:** Observe the "Safety Interlock Status" box—it will automatically reject AI suggestions that violate physical safety laws.
-
----
