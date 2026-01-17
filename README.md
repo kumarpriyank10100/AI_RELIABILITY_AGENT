@@ -1,4 +1,3 @@
-
 # AI-Reliability: Agentic Control for Tennessee Eastman Reactor
 
 This project demonstrates a **Hybrid Intelligent System** for industrial fault detection and recovery. It combines traditional Machine Learning (Random Forest) with Large Language Models (Gemini 1.5 Flash) to monitor and manage a chemical reactor based on the **Tennessee Eastman Process (TEP)** benchmark.
@@ -67,4 +66,12 @@ python app.py
 The **Tennessee Eastman Process** is a world-renowned benchmark in the chemical engineering community used to evaluate process control and monitoring systems. This project applies modern "Agentic AI" to this classic problem, showcasing how LLMs can assist human operators in high-stakes environments without compromising safety.
 
 ---
+## 🔗 Live Demo
+Experience the Agentic Control System in real-time on Hugging Face Spaces:
+[**Live Dashboard: TEP AI-Reliability Agent**](https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE_NAME)
 
+## 📖 Project Background: Why the Tennessee Eastman Process?
+The **Tennessee Eastman Process (TEP)** is a classic industrial benchmark used in control engineering for over 30 years. By applying **Agentic AI** to this problem, this project demonstrates:
+* **LLM Reasoning in High-Stakes Environments:** Moving beyond chatbots into decision-support systems.
+* **Deterministic Guardrails:** Proving that AI can be safely deployed if wrapped in a "Safety-First" architecture.
+* **Modern DCS Simulation:** Showing how legacy industrial systems can be augmented with modern AI telemetry.
