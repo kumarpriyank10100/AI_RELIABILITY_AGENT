@@ -68,7 +68,7 @@ The **Tennessee Eastman Process** is a world-renowned benchmark in the chemical 
 ---
 ## 🔗 Live Demo
 Experience the Agentic Control System in real-time on Hugging Face Spaces:
-[**LIVE DASHBOARD**]([https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE_NAME](https://priyanshu-kumar-001-tep-reactor-agentic-control.hf.space/))
+[**LIVE DASHBOARD**](https://priyanshu-kumar-001-tep-reactor-agentic-control.hf.space/)
 
 ## 📖 Project Background: Why the Tennessee Eastman Process?
 The **Tennessee Eastman Process (TEP)** is a classic industrial benchmark used in control engineering for over 30 years. By applying **Agentic AI** to this problem, this project demonstrates:
